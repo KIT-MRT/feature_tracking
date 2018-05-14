@@ -3,7 +3,7 @@
 
 #include <cv_bridge/cv_bridge.h>
 
-#include <feature_tracking/tracker_libviso.h>
+#include <feature_tracking_core/tracker_libviso.h>
 #include <matches_msg_ros/MatchesMsg.h>
 #include <rosinterface_handler/utilities.hpp>
 //#include <eigen_conversions/eigen_msg.h>

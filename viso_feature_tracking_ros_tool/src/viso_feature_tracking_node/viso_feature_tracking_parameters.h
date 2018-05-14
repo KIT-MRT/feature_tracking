@@ -12,7 +12,7 @@
 
 #include <string>
 #include <boost/filesystem.hpp>
-#include <feature_tracking/tracker_libviso.h>
+#include <feature_tracking_core/tracker_libviso.h>
 #include <ros/ros.h>
 #include <yaml-cpp/yaml.h>
 

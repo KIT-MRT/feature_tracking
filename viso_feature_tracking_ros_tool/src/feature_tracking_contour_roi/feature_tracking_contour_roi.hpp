@@ -5,7 +5,7 @@
 #include <std_msgs/Header.h>
 #include "viso_feature_tracking_ros_tool/FeatureTrackingContourRoiInterface.h"
 
-#include <feature_tracking/tracker_libviso.h>
+#include <feature_tracking_core/tracker_libviso.h>
 
 #include <matches_msg_ros/MatchesMsg.h>
 #include <sensor_msgs/Image.h>

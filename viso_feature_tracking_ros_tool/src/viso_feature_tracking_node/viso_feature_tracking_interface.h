@@ -25,7 +25,7 @@
 
 #include <ros/ros.h>
 
-#include <feature_tracking/tracker_libviso.h>
+#include <feature_tracking_core/tracker_libviso.h>
 #include "viso_feature_tracking_interface.h"
 #include "viso_feature_tracking_parameters.h"
 

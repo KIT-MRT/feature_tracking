@@ -1,6 +1,6 @@
 #pragma once
 #include <deque>
-#include <feature_tracking/tracker_libviso.h>
+#include <feature_tracking_core/tracker_libviso.h>
 #include <matches_msg_ros/MatchesMsg.h>
 #include <ros/ros.h>
 

@@ -1,12 +1,12 @@
 <package format="2">
   <name>viso_feature_tracking_ros_tool</name>
   <version>0.0.0</version>
-  <description>ToDo: Edit package description</description>
+  <description>Ros tool for feature tracking with libviso2 features.</description>
 
   <license>GPLv3</license>
   <maintainer email="johannes.graeter@kit.edu">Johannes Graeter</maintainer>
   <author email="johannes.graeter@kit.edu">Johannes Graeter</author>
-  <url type="repository">https://gitlab.mrt.uni-karlsruhe.de/MRT/viso_feature_tracking_ros_tool.git</url>
+  <url type="repository">http://github.com/KIT-MRT/feature_tracking</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>mrt_cmake_modules</build_depend>
@@ -18,7 +18,7 @@
   <!-- <build_depend>rospy</build_depend> Use this instead of roscpp  when writing a python node -->
   <depend>roslib</depend>
   <depend>nodelet</depend>
-  <depend>feature_tracking</depend>
+  <depend>feature_tracking_core</depend>
   <depend>matches_msg_ros</depend>
   <depend>cv_bridge</depend>
   <depend>mrt_opencv</depend>
