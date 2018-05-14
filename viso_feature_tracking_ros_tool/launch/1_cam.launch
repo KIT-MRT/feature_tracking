@@ -1,0 +1,10 @@
+<launch>
+    <arg name="camera_name" default="camera" />
+    <arg name="config" />
+	<arg name="verbosity" default="info" />    
+    <!-- feature tracking node -->
+    <node pkg="viso_feature_tracking_ros_tool" type="viso_feature_tracking_node" name="viso_feature_tracking_node_$(arg camera_name)" output="screen">
+    	<param name="verbosity" value="$(arg verbosity)" />
+        <param name="config" value="$(arg config)" />
+    </node>
+</launch>

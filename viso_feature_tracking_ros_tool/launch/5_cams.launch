@@ -1,0 +1,31 @@
+<launch>
+  <include
+    file="$(find viso_feature_tracking_ros_tool)/launch/1_cam.launch" ns="svfs_front_left">
+    <arg name="config" value="$(find viso_feature_tracking_ros_tool)/res/svfs_front_left.yaml"/>
+	  <arg name="verbosity" value="info" />
+  </include>
+
+  <include
+    file="$(find viso_feature_tracking_ros_tool)/launch/1_cam.launch" ns="svfs_front_rightleft">
+    <arg name="config" value="$(find viso_feature_tracking_ros_tool)/res/svfs_front_right.yaml"/>
+    <arg name="verbosity" value="info" />
+  </include>
+
+  <include
+    file="$(find viso_feature_tracking_ros_tool)/launch/1_cam.launch" ns="svfs_left">
+    <arg name="config" value="$(find viso_feature_tracking_ros_tool)/res/svfs_left.yaml"/>
+    <arg name="verbosity" value="info" />
+  </include>
+
+  <include
+    file="$(find viso_feature_tracking_ros_tool)/launch/1_cam.launch" ns="svfs_right">
+    <arg name="config" value="$(find viso_feature_tracking_ros_tool)/res/svfs_right.yaml"/>
+    <arg name="verbosity" value="info" />
+  </include>
+
+  <include
+    file="$(find viso_feature_tracking_ros_tool)/launch/1_cam.launch" ns="svfs_rear">
+    <arg name="config" value="$(find viso_feature_tracking_ros_tool)/res/svfs_rear.yaml"/>
+    <arg name="verbosity" value="info" />
+  </include>
+</launch>

@@ -1,0 +1,6 @@
+<library path="lib/libfeature_tracking_contour_roi_nodelet">
+<class name="viso_feature_tracking_ros_tool/FeatureTrackingContourRoiNodelet"
+       type="viso_feature_tracking_ros_tool::FeatureTrackingContourRoiNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>

@@ -1,0 +1,37 @@
+general:
+  # ROS interface settings
+  matches_msg_queue_size: 10
+  matches_msg_name: /svfs_left/matches_spheric
+  image_msg_queue_size: 10
+  image_msg_name: /sensor/camera/svfs_left/image
+# matcher:
+#   # viso2::Matcher params and tracker config
+#   nms_n: 8
+#   nms_tau: 50
+#   match_binsize: 100
+#   match_radius: 600
+#   match_disp_tolerance: 10
+#   outlier_disp_tolerance: 5
+#   outlier_flow_tolerance: 20
+#   multi_stage: 1
+#   half_resolution: 1
+#   max_track_length: 30
+#   method: 0
+#   blur_size: 5
+#   blur_sigma: 0.5
+# 
+matcher:
+  # viso2::Matcher params and tracker config
+  nms_n: 5 # the higher the less matches
+  nms_tau: 50 # the higher the less matches
+  match_binsize: 10 # in second matching stage, we use a motion prior based on the flow in the bins the higher the slower
+  match_radius: 600 # radius in which matches will be searched in first stage
+  match_disp_tolerance: 0 #only stereo
+  outlier_disp_tolerance: 0 #only stereo
+  outlier_flow_tolerance: 100 # for outlier rej all matches are triangulated by delauny and norm1 for each edge point must be similar with other edge point
+  multi_stage: 1
+  half_resolution: 1
+  max_track_length: 30
+  method: 0
+  blur_size: 5
+  blur_sigma: 0.5

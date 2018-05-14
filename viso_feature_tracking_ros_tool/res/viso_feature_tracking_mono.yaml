@@ -1,0 +1,20 @@
+general:
+  # ROS interface settings
+  matches_msg_queue_size: 10
+  matches_msg_name: /data/matches_svfs_front_left
+  image_msg_queue_size: 10
+  image_msg_name: /sensor/camera/svfs_front_left/image
+matcher:
+  # viso2::Matcher params and tracker config
+  nms_n: 10
+  nms_tau: 50
+  match_binsize: 50
+  match_radius: 200
+  match_disp_tolerance: 2
+  outlier_disp_tolerance: 5
+  outlier_flow_tolerance: 20
+  multi_stage: 1
+  half_resolution: 0
+  max_track_length: 30
+  method: 0
+  refinement: 0

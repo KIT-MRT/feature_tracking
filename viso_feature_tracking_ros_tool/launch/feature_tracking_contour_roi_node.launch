@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="config" default="$(find viso_feature_tracking_ros_tool)/launch/params/feature_tracking_contour_roi_parameters.yaml" />
+
+  <node pkg="viso_feature_tracking_ros_tool" type="feature_tracking_contour_roi" name="feature_tracking_contour_roi" output="screen">
+    <rosparam command="load" file="$(arg config)"/>
+  </node>
+
+</launch>
