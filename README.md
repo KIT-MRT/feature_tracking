@@ -6,4 +6,4 @@ Framework for tracking feature matches, f.e. from libviso2.
 * feature_tracking: catkin meta-package
 
 # Note
-* For useage you have to use libviso2 version from https://github.com/KIT-MRT/viso2
+* You have to have libviso2 version from https://github.com/KIT-MRT/viso2 in your catkin workspace.
