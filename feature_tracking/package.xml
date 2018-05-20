@@ -12,6 +12,8 @@
   <exec_depend>feature_tracking_core</exec_depend>
   <exec_depend>viso_feature_tracking_ros_tool</exec_depend>
   <exec_depend>matches_msg_ros</exec_depend>
+  <exec_depend>image_preproc</exec_depend>
+  <exec_depend>image_preproc_ros_tool</exec_depend>
   <export>
     <metapackage />
   </export>
