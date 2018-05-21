@@ -24,10 +24,9 @@
   <depend>cv_bridge</depend>
   <depend>image_preproc</depend>
   <depend>image_transport</depend>
-  <depend>utils_ros</depend>
   <depend>pcl_ros</depend>
   <depend>pcl_conversions</depend>
-  <depend>mrt_image_geometry_ros</depend>
+  <depend>image_geometry</depend>
   <!-- 
     Documentation for dependencies:
     <build_depend>            Build-time dependency required to build 

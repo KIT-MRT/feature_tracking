@@ -1,6 +1,6 @@
 #include <ros/ros.h>
 #include <opencv/cv.hpp>
-#include <mrt_cv_bridge_ros/cv_bridge.h>
+#include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/Image.h>
 #include <dynamic_reconfigure/server.h>
 #include <image_preproc/brightness_correction.h>

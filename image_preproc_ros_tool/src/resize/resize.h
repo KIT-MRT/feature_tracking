@@ -1,10 +1,9 @@
 #include <ros/ros.h>
 #include <opencv/cv.hpp>
-#include <mrt_cv_bridge_ros/cv_bridge.h>
+#include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/Image.h>
 #include <image_transport/image_transport.h>
 #include <dynamic_reconfigure/server.h>
-#include <utils_ros/smart_subscriber.hpp>
 
 #include "image_preproc_ros_tool/ResizeInterface.h"
 
@@ -28,7 +27,7 @@ private:
   ReconfigureServer reconfigureServer_;
 
   ros::Publisher pub_;
-  utils_ros::SmartSubscriber<sensor_msgs::Image> sub_;
+  ros::Subscriber sub_;
   std::unique_ptr<image_transport::ImageTransport> imageTransport_;
   image_transport::CameraPublisher pubCamera_;
   image_transport::CameraSubscriber subCamera_;

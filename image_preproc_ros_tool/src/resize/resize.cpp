@@ -9,9 +9,7 @@ Resize::Resize(ros::NodeHandle& nodeHandle, ros::NodeHandle& privateNodeHandle, 
   pub_ = nodeHandle.advertise<sensor_msgs::Image>(params_.output_image, params_.msg_queue_size);
   image_transport::SubscriberStatusCallback connect_cb = boost::bind(&Resize::connectCallback, this);
   pubCamera_ = imageTransport_->advertiseCamera(params_.output_camera_info, params_.msg_queue_size, connect_cb, connect_cb);
-  sub_.subscribe(nodeHandle, params_.input_image, params_.msg_queue_size, ros::TransportHints().tcpNoDelay());
-  sub_.addPublisher(pub_);
-  sub_.registerCallback(boost::bind(&Resize::imageCallback, this, _1));
+  sub_ = nodeHandle.subscribe(params_.input_image, params_.msg_queue_size, &Resize::imageCallback, this);
   reconfigureServer_.setCallback(boost::bind(&Resize::reconfigureRequest, this, _1, _2));
   connectCallback();
 }

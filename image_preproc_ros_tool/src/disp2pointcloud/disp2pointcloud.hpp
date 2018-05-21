@@ -2,7 +2,7 @@
 
 #include <array>
 #include <dynamic_reconfigure/server.h>
-#include <mrt_image_geometry_ros/pinhole_camera_model.h>
+#include <image_geometry/pinhole_camera_model.h>
 #include <image_transport/subscriber_filter.h>
 #include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
