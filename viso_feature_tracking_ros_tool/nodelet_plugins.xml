@@ -4,3 +4,9 @@
   <description></description>
 </class>
 </library>
+<library path="lib/libviso_feature_tracking_nodelet">
+<class name="viso_feature_tracking_ros_tool/VisoFeatureTrackingNodelet"
+       type="viso_feature_tracking_ros_tool::VisoFeatureTrackingNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>
