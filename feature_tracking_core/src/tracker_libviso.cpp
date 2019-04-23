@@ -24,8 +24,17 @@ void TrackerLibViso::setParameters(const Parameters& params) {
      matcherParams.cv  = params.cv;
      matcherParams.base  = params.base;*/
     matcherParams.refinement = params.refinement;
-    // set matcher
-    matcher_.reset(new Matcher(matcherParams));
+    // set matcher parameters without resettin matcher
+    // Could be that this makes problems if you alter multi_stage and have resolution after having matched stuff.
+    if (!matcher_) {
+        matcher_.reset(new Matcher(matcherParams));
+    } else {
+        matcher_->param = matcherParams;
+    }
+}
+
+TrackerLibViso::Parameters TrackerLibViso::getParameters() const {
+    return params_;
 }
 
 TrackerLibViso::TrackerLibViso(Parameters params) : params_(params) {

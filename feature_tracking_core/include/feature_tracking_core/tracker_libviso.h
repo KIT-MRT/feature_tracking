@@ -128,7 +128,9 @@ public:
     ///////////////////////////////////
     /// \brief setParameters set
     /// tracker parameters
-    void setParameters(const Parameters &params);
+    void setParameters(const Parameters& params);
+    Parameters getParameters() const;
+
 protected:
     ///////////////////////////////////
     /// \brief handImageToMatcher performs
