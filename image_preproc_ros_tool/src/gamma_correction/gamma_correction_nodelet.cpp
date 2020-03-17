@@ -17,5 +17,4 @@ void GammaCorrectionNodelet::onInit() {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(image_preproc_ros_tool, GammaCorrectionNodelet,
-                        image_preproc_ros_tool::GammaCorrectionNodelet, nodelet::Nodelet);
+PLUGINLIB_EXPORT_CLASS(image_preproc_ros_tool::GammaCorrectionNodelet, nodelet::Nodelet);
