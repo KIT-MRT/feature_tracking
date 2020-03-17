@@ -17,5 +17,4 @@ void ResizeNodelet::onInit() {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(image_preproc_ros_tool, ResizeNodelet,
-                        image_preproc_ros_tool::ResizeNodelet, nodelet::Nodelet);
+PLUGINLIB_EXPORT_CLASS(image_preproc_ros_tool::ResizeNodelet, nodelet::Nodelet);

@@ -16,7 +16,5 @@ void FeatureTrackingContourRoiNodelet::onInit() {
 
 } // namespace viso_feature_tracking_ros_tool
 
-PLUGINLIB_DECLARE_CLASS(viso_feature_tracking_ros_tool,
-                        FeatureTrackingContourRoiNodelet,
-                        viso_feature_tracking_ros_tool::FeatureTrackingContourRoiNodelet,
-                        nodelet::Nodelet);
+PLUGINLIB_EXPORT_CLASS(viso_feature_tracking_ros_tool::FeatureTrackingContourRoiNodelet,
+                       nodelet::Nodelet);
